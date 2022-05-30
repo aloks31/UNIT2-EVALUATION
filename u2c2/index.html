@@ -1,118 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit2 C2</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      #banner{
-        margin: auto;
-        background-color: #283288;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit2 C2</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #banner {
+      margin: auto;
+      background-color: #283288;
+      display: flex;
+      border: 1px solid black;
+      width: 80%;
+      height: 250px;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+
+    #banner>div {
+      border: 1px solid transparent;
+      margin-left: 40px;
+      margin-right: 40px;
+
+      color: white;
+    }
+
+    #banner>div:first-child>h1 {
+      margin-top: 40px;
+
+    }
+
+    #banner>div:first-child>p {
+      margin-top: 10px;
+
+    }
+
+    #banner>div:first-child>button {
+      margin-top: 5px;
+      padding: 3px 8px;
+      border-radius: 10px;
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    #banner>div>img {
+      width: 100%;
+      height: 250px;
+    }
+
+
+    #services {
+      border: 1px solid transparent;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 260px;
+      gap: 10px;
+      width: 80%;
+      margin: auto;
+      margin-top: 40PX;
+    }
+
+    #services>div {
+      border: 1px solid transparent;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    #services>div>img {
+      width: 90%;
+      height: 160px;
+      padding-left: 8px;
+    }
+
+    #services>div>h3 {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    #services>div>p {
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+
+
+    #works{
+      border: 1px solid yellow;
+      margin: auto;
+      margin-top: 40px;
+      width: 80%;
+    }
+
+
+    /* Medium Screen */
+    @media only screen and (min-width: 500px) and (max-width: 768px) {
+      #banner {
         display: flex;
-        border: 1px solid black;
-        width: 80%;
-        height: 250px;
-        justify-content: space-between;
-        border-radius: 10px;
-      }
-      #banner>div{
-        border: 1px solid transparent;
-        margin-left: 40px;
-        margin-right: 40px;
-        
-              color: white;  
-      }
-      #banner>div:first-child>h1{
-         margin-top: 40px;
-        
-      }
-      #banner>div:first-child>p{
-         margin-top: 10px;
-
-      }
-      #banner>div:first-child>button{
-        margin-top: 5px;
-        padding: 3px 8px;
-        border-radius: 10px;
-        border: 1px solid black;
-        background-color: white;
-      }
-      #banner>div>img{
-        width: 100%;
-        height: 250px;
+        flex-direction: column;
       }
 
-     
-      #serevices{
+      #banner>div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #services {
         display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: 250px;
-        width: 80%;
-        margin: auto;
-        border: 1px solid red;
-        height: 250px;
-        margin-top: 50PX;
-        
-      
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 260px);
       }
-      #services>div{
-        border: 1px solid black;
-      }
-      /* #services>div>img{
-        width: 100%;
-      } */
+    }
 
-
-      /* Medium Screen */
-      @media only screen and (min-width: 500px) and (max-width: 768px) {
-         #banner{
-           flex-direction: column;
-         }
+    /* Small Screen */
+    @media only screen and (min-width: 320px) and (max-width: 499px) {
+      #banner {
+        display: flex;
+        flex-direction: column;
       }
 
-      /* Small Screen */
-      @media only screen and (min-width: 320px) and (max-width: 499px) {
+      #banner>div {
+        display: flex;
+        flex-direction: column;
       }
-    </style>
-  </head>
-  <body>
-    <div id="main">
-      <div id="banner">
-        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
-        <div>
-          <h1>You are in safe hands</h1>
-          <p>Choose the experts in end to end surgical care</p>
-          <button>Know More</button>
-        </div>
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="error">
-        </div>
+
+      #services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 260px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="banner">
+      <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
+      <div>
+        <h1>You are in safe hands</h1>
+        <p>Choose the experts in end to end surgical care</p>
+        <button>Know More</button>
       </div>
-      <div id="services">
-        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h3>Instant Video Consultation</h3>
-          <p>Connect Within 60 secs</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div id="works">
-        <h1>Book an appointment for an in-clinic consultation</h1>
-        <p>Find experienced doctors across all specialties</p>
-        <div>
-          <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
-        </div>
+      <div>
+        <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="error">
       </div>
     </div>
-  </body>
+    <div id="services">
+      <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+          alt="">
+        <h3>Instant Video Consultation</h3>
+        <p>Connect Within 60 secs</p>
+      </div>
+    </div>
+    <div id="works">
+      <h1>Book an appointment for an in-clinic consultation</h1>
+      <p>Find experienced doctors across all specialties</p>
+      <div>
+        <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
