@@ -85,15 +85,47 @@
     #services>div>p {
       margin-top: 5px;
       margin-left: 10px;
+      color: #b1b0b0;
     }
 
 
+
+      #works>h1{
+        text-align: center;
+      }
+      #works>p{
+        text-align: center;
+      }
     #works{
-      border: 1px solid yellow;
+      border: 1px solid transparent;
       margin: auto;
       margin-top: 40px;
       width: 80%;
+     
+     
     }
+    #works>div{
+      border: 1px solid transparent;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,260px);
+      gap: 20px;
+    }
+    #works>div>div{
+      border: 1px solid transparent;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #works>div>div>img{
+      width: 100%;
+    }
+    #works>div>div>h3{
+      margin-left: 5px;
+      }
+      #works>div>div>p{
+      margin-left: 5px;
+      font-size: 15px;
+      }
 
 
     /* Medium Screen */
@@ -113,6 +145,12 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 260px);
       }
+      #works>div{
+        display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(4,260px);
+      gap: 20px;
+      }
     }
 
     /* Small Screen */
@@ -131,6 +169,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 260px);
+      }
+      #works>div{
+        display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(8,350px);
+      gap: 20px;
       }
     }
   </style>
@@ -199,7 +243,46 @@
       <p>Find experienced doctors across all specialties</p>
       <div>
         <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
-
+        <div>
+           <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+           <h3>Dentist</h3>
+           <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dentist Checkup</p>
+        </div>
 
       </div>
     </div>
